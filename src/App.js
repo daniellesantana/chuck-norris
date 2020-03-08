@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Page1 = () => {
-
+function App() {
   useEffect(() => {
     getData();
   }, []);
@@ -17,11 +16,10 @@ const Page1 = () => {
   return (
     <div>
       <h1>Chuck Norris Jokes</h1>
-      <button onClick={ getData }>Get Joke</button>
       <p>{ quote }</p>
+      <button onClick={ getData }>Get Joke</button>
     </div>
-
   );
 };
 
-export default Page1;
+export default App;
