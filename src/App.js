@@ -1,25 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Header from './components/Header';
+import Layout from './components/Layout';
+import BackgroundImg from './components/BackgroundImg';
+import Jokes from './components/Jokes';
 
-function App() {
-  useEffect(() => {
-    getData();
-  }, []);
+import './styles/global.css';
+import './styles/components/app.css';
 
-  const [ quote, setQuote ] = useState();
-
-  const getData = async () => {
-    let chuckJokes = await fetch(`https://api.chucknorris.io/jokes/random`);
-    let data = await chuckJokes.json();
-    setQuote(data.value);
-  }
-
-  return (
-    <div>
-      <h1>Chuck Norris Jokes</h1>
-      <p>{ quote }</p>
-      <button onClick={ getData }>Get Joke</button>
-    </div>
-  );
+const App = () => {
+  return(
+    <>
+    <Header />
+      <Layout>
+        <Jokes />
+        <BackgroundImg />
+      </Layout>
+    </>
+  )
 };
 
 export default App;
