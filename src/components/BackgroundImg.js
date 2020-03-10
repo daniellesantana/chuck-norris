@@ -5,7 +5,7 @@ import '../styles/components/backgroundImg.css';
 
 const BackgroundImg = () => {
   return(
-    <figure>
+    <figure className="figure">
       <div className="content-figure">
         <img className="img-chuck" alt="cartoon chuck norris holding two guns" src={ chuck } />
       </div>

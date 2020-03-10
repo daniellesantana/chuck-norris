@@ -8,3 +8,10 @@
   letter-spacing: 20px;
   padding: 40px 0;
 }
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+}

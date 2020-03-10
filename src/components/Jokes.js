@@ -16,10 +16,10 @@ const Jokes = () => {
 
   return (
     <section className="container-joke">
-      <button className="button-jokes" onClick={ getData }>Get Joke</button>
       <div className="content-joke">
         <blockquote className="text-jokes">{ quote }</blockquote>
       </div>  
+      <button className="button-jokes" onClick={ getData }>Get Joke</button>
     </section>    
   );
 };
