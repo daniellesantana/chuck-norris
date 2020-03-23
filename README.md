@@ -1,4 +1,4 @@
-![chuck-icon](./src/assets/chuck.ico)
+
 
 # [Chuck Norris Jokes](https://daniellesantana.github.io/chuck-norris/)
 
